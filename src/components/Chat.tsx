@@ -116,7 +116,7 @@ export default function Chat({ sessionId, messages, setMessages, onToggleTheme, 
 
         try {
             const apiUrl = import.meta.env.VITE_RAG_MODEL_API_URL;
-            const response = await fetch(apiUrl, {
+            const response = await fetch(`${apiUrl}/rag-model-api/chat`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

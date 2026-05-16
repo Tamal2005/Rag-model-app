@@ -24,7 +24,7 @@ const getInitialMessages = (): Message[] => [
   {
     id: crypto.randomUUID(),
     role: "assistant",
-    text: "Hello! I'm your RAG-powered assistant. Ask me anything — I'll search through your knowledge base and surface the most relevant answers with sources.",
+    text: "Hi! I'm NoVec RAG, your vectorless retrieval assistant. Ask me anything from machine learning, statistics, or your knowledge base — I’ll search and answer with reliable sources.",
   },
 ];
 

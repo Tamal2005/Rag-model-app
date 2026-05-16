@@ -923,10 +923,10 @@ textarea, input { font-family: var(--font-body); }
 }
 
 @media (max-width: 680px) {
-  .messages-scroll { padding: 16px 14px 12px; }
+  .messages-scroll { padding: 16px 14px 70px; }
   .bubble { max-width: 84%; }
   .input-zone { padding: 12px 14px 16px; }
-  .chat-header { padding: 12px 16px ; }
+  .chat-header { padding: 12px 16px;}
 }
 
 @media (max-width: 640px) {

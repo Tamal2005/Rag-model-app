@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { TrashIcon, SunIcon, MoonIcon } from "@heroicons/react/24/outline";
+import { TrashIcon, SunIcon, MoonIcon, InformationCircleIcon } from "@heroicons/react/24/outline";
 
 interface Message {
     id: string;
@@ -216,7 +216,7 @@ export default function Chat({ sessionId, messages, setMessages, onToggleTheme, 
 
                 {/* Messages */}
                 <div className="messages-scroll">
-                    <div className="messages-inner pt-2 pt-sm-2 pt-md-3">
+                    <div className="messages-inner">
                         {(messages ?? []).map((msg) => (
                             <MessageBubble
                                 key={msg.id}
@@ -263,11 +263,8 @@ export default function Chat({ sessionId, messages, setMessages, onToggleTheme, 
                             </button>
                         </div>
                         <p className="input-hint">
-                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none">
-                                <path d="M13 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V9z" stroke="currentColor" strokeWidth="2" />
-                                <polyline points="13,2 13,9 20,9" stroke="currentColor" strokeWidth="2" />
-                            </svg>
-                            Grounded in your indexed documents · Enter to send · Shift+Enter for newline
+                            <InformationCircleIcon width={14} height={14} />
+                            Enter to send · Shift+Enter for newline
                         </p>
                     </div>
                 </div>

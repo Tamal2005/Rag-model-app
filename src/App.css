@@ -911,6 +911,10 @@ textarea, input { font-family: var(--font-body); }
   .chat-header-title {
     display: none;
   }
+
+  .msg-assistant {
+  padding-top: 32px;
+  }
 }
 
 /* ─── Desktop Sidebar ─────────────────────── */

@@ -216,7 +216,7 @@ export default function Chat({ sessionId, messages, setMessages, onToggleTheme, 
 
                 {/* Messages */}
                 <div className="messages-scroll">
-                    <div className="messages-inner pt-3">
+                    <div className="messages-inner pt-2 pt-sm-2 pt-md-3">
                         {(messages ?? []).map((msg) => (
                             <MessageBubble
                                 key={msg.id}
